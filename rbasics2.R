@@ -1,0 +1,84 @@
+x<-vector("character",length = 10)
+x
+y<-vector("logical",length = 3)
+y
+x[1]<-1
+x
+x[0]<-2
+x
+x[-1]<-1
+x
+x[-1]<-3
+x
+x<-4L
+class(x)
+x<-(4,"TRUE")
+x<-c(4,"TRUE")
+class(x)
+x<-c(3,TRUE)
+class(x)
+x<-c(1,2,3)
+y<-c(1,24,5)
+rbind(x,y)
+x<-list(2,"a",TRUE)
+x[[1]]
+x<-1:4
+y<-2
+x+y
+x<-list(2,"a",TRUE,FALSE)
+x[1]
+x[[1]]
+x[2]
+x[[2]]
+x[3]
+x[[3]]
+x$2
+x$[2]
+x<-list(a=2,b="a")
+x[1]
+x[[1]]
+x[2]
+x[[2]]
+x$a
+x[1:2]
+y
+y<-matrix(rep(10,4),2,3)
+x<-4
+class(x)
+x<-c(1,2,3)
+y<-c(2,3,5)
+cbind(x,y)
+x<-1:4
+y<-2:3
+x+y
+class(x)
+read.table(file.choose())
+read.csv(file.choose())
+read.csv(file.choose())
+data<-read.csv(file.choose())
+data[1:2,]
+tail.matrix(data,n=2L)
+data[47,1]
+good<-is.na(data[,1])
+good
+x[!good]
+x<-data[,1]
+x[!good]
+x[good]
+mean(x[!good])
+x<-vector("character",length = 10)
+x
+x<-vector("character",length = 10)
+x
+y<-vector("logical",length = 3)
+y
+x[1]<-1
+x
+for (i in 1:100) {
+  if(i<20)
+  {
+    next
+  }
+  print(i)
+}
+  
